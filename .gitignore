@@ -50,3 +50,5 @@ next-env.d.ts
 .netrc
 .aws/
 .ssh/
+
+.env.local

@@ -1,0 +1,23 @@
+.maslow-pyramid {
+  --pyramid-dark: #282d46;
+  --pyramid-light: #cbd4dc;
+  --pyramid-primary: #188aec;
+  width: min(100%, 447px);
+  margin: 0;
+  color: var(--pyramid-dark);
+  font-family: "Poppins", Arial, sans-serif;
+}
+.maslow-title {
+  margin: 0 0 25px 20px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 47px;
+}
+.maslow-diagram { display: block; width: 100%; height: auto; overflow: visible; }
+.maslow-slice { fill: var(--pyramid-light); }
+.maslow-divider { stroke: var(--pyramid-light); stroke-width: 2px; opacity: .4; }
+.maslow-label { fill: var(--pyramid-dark); font-family: inherit; font-size: 18px; font-weight: 400; }
+.maslow-active .maslow-slice, .maslow-highlight { fill: var(--pyramid-primary); }
+.maslow-active .maslow-label { fill: #f6fafe; font-size: 26px; font-weight: 500; }
+@media(max-width:480px) { .maslow-title { font-size: 23px; margin-left: 15px; } }
+

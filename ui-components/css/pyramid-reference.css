@@ -1,0 +1,236 @@
+/* Maslow Pyramid */
+
+.pyramid{
+
+
+
+
+position: absolute;
+width: 447px;
+height: 414px;
+left: 154px;
+top: 783px;
+
+
+
+/* Maslow Pyramid */
+
+position: absolute;
+width: 245px;
+height: 47px;
+left: 174px;
+top: 783px;
+
+/* Body Bold */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 182.6%;
+/* 또는 47px */
+
+/* Dark */
+color: #282D46;
+
+
+
+/* Self Actualisation */
+
+position: absolute;
+width: 244px;
+height: 27px;
+left: 357px;
+top: 877px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* 상자 높이와 동일 */
+
+/* Dark */
+color: #282D46;
+
+
+
+/* Love Belonging */
+
+position: absolute;
+width: 168px;
+height: 27px;
+left: 359px;
+top: 1012px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* 상자 높이와 동일 */
+
+/* Dark */
+color: #282D46;
+
+
+
+/* Safety */
+
+position: absolute;
+width: 244px;
+height: 27px;
+left: 357px;
+top: 1078px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* 상자 높이와 동일 */
+
+/* Dark */
+color: #282D46;
+
+
+
+/* Physiological */
+
+position: absolute;
+width: 244px;
+height: 27px;
+left: 357px;
+top: 1145px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* 상자 높이와 동일 */
+
+/* Dark */
+color: #282D46;
+
+
+
+/* Vector 206 */
+
+position: absolute;
+width: 170px;
+height: 342px;
+left: 154px;
+top: 855px;
+
+/* Light */
+background: #CBD4DC;
+
+
+/* Line 6 */
+
+position: absolute;
+width: 233px;
+height: 0px;
+left: 330px;
+top: 855px;
+
+opacity: 0.4;
+/* Light */
+border: 2px solid #CBD4DC;
+
+
+/* Line 7 */
+
+position: absolute;
+width: 233px;
+height: 0px;
+left: 330px;
+top: 1062px;
+
+opacity: 0.4;
+/* Light */
+border: 2px solid #CBD4DC;
+
+
+/* Line 10 */
+
+position: absolute;
+width: 233px;
+height: 0px;
+left: 330px;
+top: 1130px;
+
+opacity: 0.4;
+/* Light */
+border: 2px solid #CBD4DC;
+
+
+/* Line 11 */
+
+position: absolute;
+width: 233px;
+height: 0px;
+left: 330px;
+top: 1196px;
+
+opacity: 0.4;
+/* Light */
+border: 2px solid #CBD4DC;
+
+
+/* Group 159 */
+
+position: absolute;
+width: 263px;
+height: 69px;
+left: 300px;
+top: 928px;
+
+
+
+/* Rectangle 190 */
+
+position: absolute;
+width: 239px;
+height: 69px;
+left: 324px;
+top: 928px;
+
+/* Primary */
+background: #188AEC;
+border-radius: 0px 10px 10px 0px;
+
+
+/* Esteem */
+
+position: absolute;
+width: 130px;
+height: 47px;
+left: 378px;
+top: 939px;
+
+/* Body */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 182.6%;
+/* 또는 47px */
+text-align: center;
+
+/* Extra Light */
+color: #F6FAFE;
+
+
+
+/* Vector 207 */
+
+position: absolute;
+width: 24px;
+height: 67.5px;
+left: 300px;
+top: 928.5px;
+
+/* Primary */
+background: #188AEC;
+}
