@@ -1,0 +1,20 @@
+Google Sheets email collection
+
+1. Create the private Google spreadsheet and open Extensions > Apps Script.
+2. Paste Code.gs into the script editor.
+3. Set script properties:
+   SPREADSHEET_ID = ID from the spreadsheet URL
+   WEBHOOK_TOKEN = a randomly generated secret, at least 32 bytes
+4. Deploy as Web app, execute as yourself, allow Anyone to call the endpoint.
+   The script checks WEBHOOK_TOKEN before accessing the private sheet.
+5. Set these server-only Vercel environment variables in each deployed project:
+   GOOGLE_SHEETS_WEBHOOK_URL = deployed /exec URL
+   GOOGLE_SHEETS_WEBHOOK_TOKEN = same secret as step 3
+6. Redeploy and submit a test email. Verify one row in the sheet;
+   submitting it again must not add a duplicate.
+
+Do not put the token in public HTML, JavaScript, NEXT_PUBLIC_ variables, or Git.
+Without either environment variable, the existing Supabase save remains active.
+When both are configured, new submissions are saved to Google Sheets instead.
+Older Supabase submissions are not copied automatically.
+No email messages are sent by this integration.

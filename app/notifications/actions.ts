@@ -1,6 +1,7 @@
 "use server";
 
 import { createClient } from "../../utils/supabase/server";
+import { saveNotificationToSheet } from "../../utils/google-sheets";
 
 export type NotificationState = { error?: string; success?: boolean };
 
@@ -12,6 +13,7 @@ export async function subscribe(_state: NotificationState, form: FormData): Prom
   }
   if (form.get("consent") !== "on") return { error: "이메일 수집 및 출시 알림 수신에 동의해 주세요." };
   try {
+    if (await saveNotificationToSheet(email)) return { success: true };
     const supabase = await createClient();
     const { error } = await supabase.from("launch_notifications").insert({ email, consent: true });
     // Keep the response identical for existing addresses to avoid disclosing subscribers.
