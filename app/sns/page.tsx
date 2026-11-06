@@ -1,4 +1,8 @@
-import Image from "next/image";
-export const metadata = { title: "SNS 카드뉴스 | bLOOM" };
-const titles=["동백숲에서 온 작은 설렘","마을의 아름다움을 일상에","백송이와 만나는 동백마을","동백요정이 피워낸 bLOOM","콜라보 더 알아보기"];
-export default function SocialCards(){return <main className="sns-page"><a className="sns-back" href="/">← 콜라보 웹사이트로</a><h1>한 장씩, 동백이 피어나는 이야기.</h1><p>동백마을 × A2O Lite · SNS 카드뉴스 5장<br/>1080 × 1350 PNG · 순서대로 게시해 주세요.</p><div className="sns-grid">{titles.map((title,i)=><article className="sns-card" key={title}><Image src={`/campaign/cards/0${i+1}.png`} alt={`${i+1}장: ${title}`} width={1080} height={1350}/><a href={`/campaign/cards/0${i+1}.png`} download={`bloom-sns-0${i+1}.png`}>0{i+1}. {title} · PNG 다운로드 ↓</a></article>)}</div><p className="sns-note">게시 문구 제안: 동백숲의 이야기가, 당신의 일상에 피어납니다. 백송이와 함께 만나는 동백마을 × A2O Lite의 첫 콜라보. 프로필 링크에서 컬렉션을 만나보세요. #동백마을 #A2OLite #bLOOM #백송이<br/>카카오톡 채널과 실제 마을 체험 사진은 추후 연결 예정입니다. 출시 일정은 확정 후 안내합니다.</p></main>}
+import CardNews from "../card-news";
+import Link from "next/link";
+
+export const metadata = { title: "동백마을 카드뉴스 | bLOOM" };
+
+export default function SocialCards() {
+  return <main><div className="sns-page"><Link className="sns-back" href="/">← 콜라보 웹사이트로</Link></div><CardNews /></main>;
+}

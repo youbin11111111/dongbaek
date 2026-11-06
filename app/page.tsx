@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ProductCarousel from "./product-carousel";
+import CardNews from "./card-news";
 import AuthLinks from "./auth/auth-links";
 import { useEffect, useRef, useState } from "react";
 function Flower({className=""}:{className?:string}){return <svg className={className} viewBox="0 0 100 100" aria-hidden="true"><g fill="currentColor">{[0,72,144,216,288].map(a=><ellipse key={a} cx="50" cy="30" rx="20" ry="27" transform={`rotate(${a} 50 50)`}/>)}</g><path d="M50 35C44 45 40 49 40 56a10 10 0 0020 0c0-7-4-11-10-21Z" fill="#fff8e9"/><path d="M50 43c-4 7-6 9-6 13a6 6 0 0012 0c0-4-2-6-6-13Z" fill="#e7b448"/></svg>}
@@ -27,14 +28,8 @@ export default function Home(){
   {image:"handcream-single",name:"핸드크림",en:"BLOOM HAND CREAM",text:"손끝 가까이에서 만나는 동백의 그림."},
   {image:"cup-single",name:"컵",en:"BLOOM CERAMIC CUP",text:"하루의 여유를 담는 따뜻한 동백 한 잔."},
  ]} onNotify={()=>setNotice(true)}/>
+ <CardNews/>
  <section className="notify-section" id="notify"><Flower/><p className="eyebrow">LET YOUR EVERYDAY BLOOM</p><h2>곧 피어날 소식,<br/>가장 먼저 만나세요.</h2><p>동백마을 × A20 Lite의 새로운 만남.<br/>카카오톡으로 콜라보 출시 소식을 전해드릴게요.</p><button className="kakao-button" onClick={()=>setNotice(true)}><span className="chat-icon"/> 카카오톡 알림받기 <span>↗</span></button><p className="notify-note">카카오톡 채널 오픈 준비 중</p></section></main>
- <footer><a href="#" className="brand">bL<Flower/>OM</a><p>동백마을의 이야기를, 당신의 일상에.</p><span>동백마을 × A20 Lite</span><a href="/sns">SNS 카드뉴스 5장 ↗</a><small>© 동백마을 × A20 Lite. Campaign concept.</small></footer>
+ <footer><a href="#" className="brand">bL<Flower/>OM</a><p>동백마을의 이야기를, 당신의 일상에.</p><span>동백마을 × A20 Lite</span><a href="/sns">동백마을 카드뉴스 7장 ↗</a><small>© 동백마을 × A20 Lite. Campaign concept.</small></footer>
  <dialog ref={dialog} onCancel={()=>setNotice(false)} onClick={e=>{if(e.target===e.currentTarget)setNotice(false)}} className="notice-dialog"><button className="close-dialog" onClick={()=>setNotice(false)} aria-label="닫기">×</button><Flower/><p className="eyebrow">COMING SOON</p><h2>알림 채널도<br/>피어날 준비 중이에요.</h2><p>카카오톡 채널이 열리면 이곳에서<br/>콜라보 출시 알림을 신청할 수 있어요.</p><p className="dialog-note">현재 알림 신청은 접수되지 않습니다.</p><button className="primary-button" onClick={()=>setNotice(false)}>컬렉션 계속 둘러보기 →</button></dialog></>;
 }
-
-
-
-
-
-
-
