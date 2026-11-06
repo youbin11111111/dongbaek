@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import LandingVideo from "./landing-video";
+import Directions from "./directions";
 import ProductCarousel from "./product-carousel";
 import CardNews from "./card-news";
 import NotificationForm from "./notifications/notification-form";
@@ -31,7 +32,7 @@ export default function Home(){
   {image:"cup-single",name:"컵",en:"BLOOM CERAMIC CUP",text:"하루의 여유를 담는 따뜻한 동백 한 잔."},
  ]}/>
  <CardNews/>
- <section className="notify-section" id="notify"><Flower/><p className="eyebrow">LET YOUR EVERYDAY BLOOM</p><h2>곧 피어날 소식,<br/>가장 먼저 만나세요.</h2><p>동백마을 × A20 Lite의 새로운 만남.<br/>이메일로 콜라보 출시 소식을 받아보세요.</p><button className="email-notify-button" onClick={()=>setNotice(true)}><span aria-hidden="true">✉</span> 이메일 알림받기 <span>↗</span></button><p className="notify-note">이메일만 입력하면 신청할 수 있어요</p></section></main>
+ <section className="notify-section" id="notify"><Flower/><p className="eyebrow">LET YOUR EVERYDAY BLOOM</p><h2>곧 피어날 소식,<br/>가장 먼저 만나세요.</h2><p>동백마을 × A20 Lite의 새로운 만남.<br/>이메일로 콜라보 출시 소식을 받아보세요.</p><button className="email-notify-button" onClick={()=>setNotice(true)}><span aria-hidden="true">✉</span> 이메일 알림받기 <span>↗</span></button><p className="notify-note">이메일만 입력하면 신청할 수 있어요</p></section><Directions/></main>
  <footer><a href="#" className="brand">bL<Flower/>OM</a><p>동백마을의 이야기를, 당신의 일상에.</p><span>동백마을 × A20 Lite</span><a href="/sns">동백마을 카드뉴스 7장 ↗</a><small>© 동백마을 × A20 Lite. Campaign concept.</small></footer>
  <dialog ref={dialog} onCancel={()=>setNotice(false)} onClick={e=>{if(e.target===e.currentTarget)setNotice(false)}} className="notice-dialog"><button className="close-dialog" onClick={()=>setNotice(false)} aria-label="닫기">×</button><Flower/><p className="eyebrow">COMING SOON</p><h2>곧 피어날 소식,<br/>이메일로 만나세요.</h2><p>동백마을 × A20 Lite의 출시 알림을 신청하세요.</p><NotificationForm/></dialog></>;
 }
