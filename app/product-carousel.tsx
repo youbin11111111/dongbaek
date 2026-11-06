@@ -11,10 +11,9 @@ type Props = {
   caption: string;
   description: string;
   products: Product[];
-  onNotify: () => void;
 };
 
-export default function ProductCarousel({ id, title, eyebrow, caption, description, products, onNotify }: Props) {
+export default function ProductCarousel({ id, title, eyebrow, caption, description, products }: Props) {
   const track = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ index: 1, start: true, end: false });
 
@@ -71,7 +70,7 @@ export default function ProductCarousel({ id, title, eyebrow, caption, descripti
           </article>
         ))}
       </div>
-      <div className="collection-bottom"><p>{id === "collab" ? "제품 구성과 출시 일정은 추후 공개됩니다." : "동백마을의 색을 담은 굿즈를 만나보세요."}</p><button className="text-link" onClick={onNotify}>카카오톡으로 출시 알림받기 ↗</button></div>
+      <div className="collection-bottom"><p>{id === "collab" ? "제품 구성과 출시 일정은 추후 공개됩니다." : "동백마을의 색을 담은 굿즈를 만나보세요."}</p></div>
     </section>
   );
 }

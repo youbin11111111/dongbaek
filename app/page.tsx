@@ -22,14 +22,14 @@ export default function Home(){
   {image:"tote",name:"에코백",en:"CAMELLIA TOTE BAG",text:"가벼운 발걸음에 함께하는 마을의 색."},
   {image:"tumbler",name:"텀블러",en:"EVERYDAY TUMBLER",text:"잠깐의 쉼에도, 동백 한 송이."},
   {image:"keyring",name:"키링",en:"LITTLE BLOOM KEYRING",text:"가까이 두고 싶은 동백의 기억."},
- ]} onNotify={()=>setNotice(true)}/>
+ ]}/>
  <ProductCarousel id="collab" title="A20 Lite 콜라보 굿즈" eyebrow="DONGBAEK VILLAGE × A20 LITE" caption="03 / A20 LITE COLLABORATION" description="색연필로 그린 듯 다정한 동백. A20 Lite와 함께 펼쳐지는 또 다른 일상." products={[
   {image:"pouch-single",name:"파우치",en:"BLOOM POUCH",text:"작은 소지품과 함께 담아두는 동백의 색."},
   {image:"oil-single",name:"오일",en:"BLOOM OIL",text:"동백의 이야기를 담은 작은 한 병."},
   {image:"collab-keyring-single",name:"키링",en:"CAMELLIA ACRYLIC KEYRING",text:"꽃 한 송이처럼, 가방에 달아두는 설렘."},
   {image:"handcream-single",name:"핸드크림",en:"BLOOM HAND CREAM",text:"손끝 가까이에서 만나는 동백의 그림."},
   {image:"cup-single",name:"컵",en:"BLOOM CERAMIC CUP",text:"하루의 여유를 담는 따뜻한 동백 한 잔."},
- ]} onNotify={()=>setNotice(true)}/>
+ ]}/>
  <CardNews/>
  <section className="notify-section" id="notify"><Flower/><p className="eyebrow">LET YOUR EVERYDAY BLOOM</p><h2>곧 피어날 소식,<br/>가장 먼저 만나세요.</h2><p>동백마을 × A20 Lite의 새로운 만남.<br/>이메일로 콜라보 출시 소식을 받아보세요.</p><button className="email-notify-button" onClick={()=>setNotice(true)}><span aria-hidden="true">✉</span> 이메일 알림받기 <span>↗</span></button><p className="notify-note">이메일만 입력하면 신청할 수 있어요</p></section></main>
  <footer><a href="#" className="brand">bL<Flower/>OM</a><p>동백마을의 이야기를, 당신의 일상에.</p><span>동백마을 × A20 Lite</span><a href="/sns">동백마을 카드뉴스 7장 ↗</a><small>© 동백마을 × A20 Lite. Campaign concept.</small></footer>
