@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>이메일 출시 알림 | bLOOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <a class="back" href="/">← 동백마을 홈페이지</a>
+    <img class="flower" src="/icon.png" width="72" height="72" alt="동백꽃">
+    <p class="eyebrow">LET YOUR EVERYDAY BLOOM</p>
+    <h1>곧 피어날 소식,<br>이메일로 만나세요.</h1>
+    <p class="intro">동백마을 × A20 Lite의<br>콜라보 출시 소식을 받아보세요.</p>
+    <form id="notification-form" action="/api/notifications" method="post">
+      <label for="email">알림 받을 이메일</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required aria-describedby="privacy">
+      <div class="trap" aria-hidden="true"><label>Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <label class="consent"><input name="consent" type="checkbox" required><span>이메일 수집 및 콜라보 출시 알림 수신에 동의합니다. (선택)</span></label>
+      <p class="privacy" id="privacy">수집 항목: 이메일 · 이용 목적: 콜라보 출시 알림<br>보유 기간: 출시 알림 발송 완료 시까지<br>동의를 거부할 수 있으며, 거부 시 알림 신청이 제한됩니다.</p>
+      <button type="submit">이메일로 출시 알림받기 <span aria-hidden="true">→</span></button>
+    </form>
+    <p id="message" role="status" aria-live="polite"></p>
+    <noscript>신청하려면 브라우저에서 JavaScript를 켜주세요.</noscript>
+    <p class="brand">bLOOM</p>
+  </main>
+</body>
+</html>
